@@ -3,8 +3,169 @@
     <head>
         <meta charset="utf-8">
         <title>Watcher</title>
+        <link href='css/style.css' rel='stylesheet' />
+        <link href='css/font-awesome.css' rel='stylesheet' />
+        <script type='text/javascript' src='js/jquery-3.2.0.min.js'></script>
+        <script type='text/javascript' src='js\jquery.slides.min.js'></script>
     </head>
     <body>
+        <div id="header">
+            <div id="header_container">
+                <img alt="" src="images/logo.png">
+                <ul id="nav">
+                    <li>
+                        <a href='#support'>
+                            <i class='fa fa-info-circle'></i>
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#download'>
+                            <i class='fa fa-download'></i>
+                            Download
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#tour'>
+                            <i class='fa fa-map'></i>
+                            Tour
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#features'>
+                            <i class='fa fa-star'></i>
+                            Features
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <div id='content'>
+
+            <div id='slides'>
+                <img src="images/slider1.png">
+                <img src="images/slider2.png">
+            </div>
+            <div id='features'>
+                <div class='top'>
+                    <h2>What is Watcher?</h2>
+                    <p>
+                        Watcher is an automated movie searcher. It watches for new releases of
+                        your favorite movies and automatically sends the torrent or nzb to your
+                        download client. Easily set up custom qualities, post-processing, and let Watcher
+                        do the rest.
+                    </p>
+                </div>
+                <div class='feature'>
+                    <i class='fa fa-rocket'></i>
+                    <h3>Fast</h3>
+                    <p>
+                        Watcher was written from the ground up to be fast. Designed from scratch
+                        with one goal in mind -- efficiency. Ideal for low-powered hardware such
+                        as a RaspberryPi, but not lacking in features. Spend less time with
+                        Watcher and more time watching your movies.
+                    </p>
+                </div>
+                <div class='feature'>
+                    <i class='fa fa-download'></i>
+                    <h3>Use any download client</h3>
+                    <p>
+                        Ok, maybe not any client, but most. Download from Usenet and Torrents
+                        with an ever-growing selection of download clients. It is easy to add
+                        NewzNab and Torznab (using Jackett or Cardigann) indexers, or enable
+                        any pre-configured torrent providers.
+                    </p>
+                </div>
+                <div class='feature'>
+                    <i class='fa fa-puzzle-piece'></i>
+                    <h3>Extensible</h3>
+                    <p>
+                        Add custom funcionality with an easy to use plugin api. Fire off custom
+                        scripts when adding, snatching, or post-processing a movie. By removing
+                        the clutter of features you'll never use, Watcher gets the job done right
+                        quickly and stays out of your way.
+                    </p>
+                </div>
+                <div class='feature'>
+                    <i class='fa fa-desktop'></i>
+                    <h3>Cross-platform</h3>
+                    <p>
+                        To use Watcher all you need is Python 2.7.9+. That's it.
+                        With a clean and easy to read web-interface you'll be able to quickly
+                        manage your want list from any device. Host Watcher behind a
+                        reverse-proxy such as Nginx or Apache and safely access your server anywhere.
+                    </p>
+                </div>
+            </div>
+            <div id='tour'>
+                <div class='tour_col'>
+                    <img src='images/tour1.png' />
+                    <p>
+                        Multiple layouts make it a breeze to give your library an ocular patdown.
+                    </p>
+                </div>
+                <div class='tour_col'>
+                    <img src='images/tour2.png' />
+                    <p>
+                        There is a theme for everyone. Except Steve. He doesn't like anything.
+                    </p>
+                </div>
+                <div class='tour_col'>
+                    <img src='images/tour3.png' />
+                    <p>
+                        Just enough options. Configurable but easy for beginniners.
+                    </p>
+                </div>
+            </div>
+            <div id='download'>
+                <div class='top'>
+                    <h2>Download</h2>
+                    <p>
+                        Installation is fast and easy. Grab the lastest commit on GitHub and get started.
+                        <br />
+                        <a href='https://github.com/nosmokingbandit/watcher' class='download'>
+                            <i class='fa fa-github'></i>
+                            Watcher
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div id='support'>
+                <div class='top'>
+                    <h2>Support</h2>
+                </div>
+                <div class='support_col'>
+                    <a href='https://github.com/nosmokingbandit/watcher/issues'>
+                        <i class='fa fa-github'></i>
+                        GitHub Issues
+                    </a>
+                </div>
+                <div class='support_col'>
+                    <a href='https://www.reddit.com/r/watcher'>
+                        <i class='fa fa-reddit'></i>
+                        Reddit Community
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
     </body>
+    <script>
+      $(function(){
+        $("#slides").slidesjs({
+          width: 918,
+          height: 400,
+          navigation: {active: false},
+          pagination: {active: false},
+          play: {active: false,
+                 auto: true,
+                 pauseOnHover: true,
+                 interval: 8000
+             },
+          effect: {slide:{speed:1500}}
+        });
+      });
+    </script>
 </html>

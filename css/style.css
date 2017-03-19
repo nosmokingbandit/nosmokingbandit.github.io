@@ -1,0 +1,170 @@
+/*
+#151c25 Dark Blue BG
+#080f18 Darker Blue BG
+#cccccc Light Gray Text/Border
+*/
+
+body{
+    width: 100%;
+    min-width: 918px;
+    min-height: 100%;
+    background-color: #080f18;
+    color: #ccc;
+    margin: 0;
+    padding: 64px 0 64px 0;
+    overflow-y: scroll;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.25em;
+    margin: 0 0 0.25em 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* Header bar */
+div#header{
+    background-color: #151c25;
+    height: 64px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+div#header_container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+div#header img{
+    padding-left: 8px;
+}
+
+ul#nav{
+    float: right;
+
+}
+
+ul#nav li{
+    float: right;
+    height: 64px;
+    line-height: 64px;
+    font-size: 1.25em;
+    padding: 0 1.5em;
+}
+
+ul#nav li:hover,
+ul#nav li:hover a{
+    color: #151c25;
+    background: #ccc;
+}
+
+div#content{
+    width: 918px;
+    margin: 0 auto;
+}
+
+/* Image slider */
+div#slides{
+    height: 400px;
+    width: 918px;
+}
+
+/* Features list */
+div#features{
+    overflow: auto;
+    margin: 0;
+}
+
+.top{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+div.feature{
+    overflow: auto;
+    float: left;
+    width: 45%;
+    font-size: .9em;
+    padding: 5% 5% 0 0;
+}
+
+.feature i{
+    font-size: 8em;
+    width: 8rem;
+    display: inline-block;
+    margin: 2rem 1.5rem;
+    float: left;
+}
+
+/*tour*/
+div#tour{
+    margin: 1.5em auto;
+    overflow: auto;
+}
+
+div.tour_col{
+    overflow: auto;
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+}
+
+div.tour_col img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.tour_col p{
+    text-align: center;
+}
+
+
+/*download*/
+div#download{
+    margin: 1em 0;
+}
+
+a.download{
+    display: inline-block;
+    margin: 0.5em 0 0 0;
+    font-size: 1.5em;
+}
+
+/*support*/
+div#support{
+    margin: 3em 0 0 0;
+}
+
+
+div.support_col{
+    font-size: 1.25em;
+    width: 48%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
