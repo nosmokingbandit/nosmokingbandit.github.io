@@ -1,1 +1,72 @@
-Hellow World.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script type="text/javascript">
+        window.addEventListener("DOMContentLoaded", function(){
+            var code = window.location.search.split("=")[1];
+            if(!code){
+                window.location = "https://nosmokingbandit.github.io/";
+            }
+            document.querySelector("input#code").value = code;
+        })
+    </script>
+    <style>
+        body{
+            background-color: #1c1e23;
+            color: #ebebeb;
+            font-family: sans-serif;
+            width: 50%;
+            margin: 10% auto;
+            text-align: center;
+        }
+
+        img{
+            margin: 0 auto;
+        }
+
+        img#putio{
+            height: 3.25em;
+        }
+
+        input#code{
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            padding: .375rem .75rem;
+            font-size: 1.5em;
+            line-height: 1.5;
+            color: #272a31;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+
+    </style>
+  </head>
+  <body>
+
+    <img src="images/logo.png">
+    <br/>
+    <img id="putio" src="images/putio.png">
+    <p>
+        This is your Put.IO application token.<br/><br/>
+        Copy this token to yout Watcher settings to enable Put.IO<br/><br/>
+        This token allows Watcher to start and cancel downloads as well as download and erase file. Do not share this code with anyone.
+
+    </p>
+
+    <input id="code" disabled></input>
+
+
+
+  </body>
+</html>
